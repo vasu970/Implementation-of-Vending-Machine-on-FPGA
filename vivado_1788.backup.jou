@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Nov 22 16:46:31 2023
+# Process ID: 1788
+# Current directory: C:/Users/Bits/Downloads/vending_machine_final_new/vending_machine_final_new
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3872 C:\Users\Bits\Downloads\vending_machine_final_new\vending_machine_final_new\vending_machine_final_new.xpr
+# Log file: C:/Users/Bits/Downloads/vending_machine_final_new/vending_machine_final_new/vivado.log
+# Journal file: C:/Users/Bits/Downloads/vending_machine_final_new/vending_machine_final_new\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Bits/Downloads/vending_machine_final_new/vending_machine_final_new/vending_machine_final_new.xpr
+update_compile_order -fileset sources_1

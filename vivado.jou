@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jan 21 10:51:19 2024
+# Process ID: 47664
+# Current directory: C:/Users/edshe/Downloads/Finalvendingcode/vending_machine_final_new
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent40068 C:\Users\edshe\Downloads\Finalvendingcode\vending_machine_final_new\vending_machine_final_new.xpr
+# Log file: C:/Users/edshe/Downloads/Finalvendingcode/vending_machine_final_new/vivado.log
+# Journal file: C:/Users/edshe/Downloads/Finalvendingcode/vending_machine_final_new\vivado.jou
+#-----------------------------------------------------------start_gui
+open_project C:/Users/edshe/Downloads/Finalvendingcode/vending_machine_final_new/vending_machine_final_new.xpr
+uupdate_compile_order -fileset sources_1
+close_project
+create_project snipet_1 C:/Users/edshe/Downloads/Finalvendingcode/snipet_1 -part xc7vx485tffg1157-1
+file mkdir C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.srcs/sources_1/new
+close [ open C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.srcs/sources_1/new/snip.v w ]
+add_files C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.srcs/sources_1/new/snip.v
+update_compile_order -fileset sources_1
+launch_simulation
+source snip.tcl
+add_force {/snip/a} -radix dec {0 0ns}
+add_force {/snip/b} -radix bin {00001111 0ns}
+add_force {/snip/c} -radix dec {1 0ns}
+run 10 us
+close_sim
+close_project
+open_project C:/Users/edshe/Downloads/Finalvendingcode/vending_machine_final_new/vending_machine_final_new.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/edshe/lab_2/lab_2.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/edshe/lab_2/lab_2.srcs/sources_1/new/mux_par.v w ]
+add_files C:/Users/edshe/lab_2/lab_2.srcs/sources_1/new/mux_par.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mux_par [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source counter_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mux_par [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source mux_par.tcl
+run all
+run 10 us
+close_sim
+launch_simulation
+source mux_par.tcl
+close_sim
+launch_simulation
+close_project
+create_project pract_1 C:/Users/edshe/pract_1 -part xc7vx485tffg1157-1
+file mkdir C:/Users/edshe/pract_1/pract_1.srcs/sources_1/new
+close [ open C:/Users/edshe/pract_1/pract_1.srcs/sources_1/new/decoder.v w ]
+add_files C:/Users/edshe/pract_1/pract_1.srcs/sources_1/new/decoder.v
+update_compile_order -fileset sources_1
+launch_simulation
+open_project C:/Users/edshe/lab_2_2/lab_2_2.xpr
+update_compile_order -fileset sources_1
+close_project
+close_project
+open_project C:/Users/edshe/lab_3/lab_3.xpr
+update_compile_order -fileset sources_1

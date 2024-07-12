@@ -1,0 +1,347 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jan 21 10:51:19 2024
+# Process ID: 47664
+# Current directory: C:/Users/edshe/Downloads/Finalvendingcode/vending_machine_final_new
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent40068 C:\Users\edshe\Downloads\Finalvendingcode\vending_machine_final_new\vending_machine_final_new.xpr
+# Log file: C:/Users/edshe/Downloads/Finalvendingcode/vending_machine_final_new/vivado.log
+# Journal file: C:/Users/edshe/Downloads/Finalvendingcode/vending_machine_final_new\vivado.jou
+#-----------------------------------------------------------start_gui
+open_project C:/Users/edshe/Downloads/Finalvendingcode/vending_machine_final_new/vending_machine_final_new.xpr
+IINFO: [Project 1-313] Project file moved from 'C:/Users/Bits/Downloads/vending_machine_final_new/vending_machine_final_new' since last save.SScanning sources...
+Finished scanning sourcesIINFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specifiedIINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.oopen_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1016.070 ; gain = 0.000uupdate_compile_order -fileset sources_1eclose_project
+create_project snipet_1 C:/Users/edshe/Downloads/Finalvendingcode/snipet_1 -part xc7vx485tffg1157-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+file mkdir C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.srcs/sources_1/new
+close [ open C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.srcs/sources_1/new/snip.v w ]
+add_files C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.srcs/sources_1/new/snip.v
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'snip' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj snip_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.srcs/sources_1/new/snip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module snip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.070 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.sim/sim_1/behav/xsim'
+"xelab -wto 2d66af16d6e543c386351a96b17f343f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot snip_behav xil_defaultlib.snip xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 2d66af16d6e543c386351a96b17f343f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot snip_behav xil_defaultlib.snip xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.snip
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot snip_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.sim/sim_1/behav/xsim/xsim.dir/snip_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan 21 14:07:42 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1016.070 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/edshe/Downloads/Finalvendingcode/snipet_1/snipet_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "snip_behav -key {Behavioral:sim_1:Functional:snip} -tclbatch {snip.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source snip.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1016.070 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'snip_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 1016.070 ; gain = 0.000
+add_force {/snip/a} -radix dec {0 0ns}
+add_force {/snip/b} -radix bin {00001111 0ns}
+add_force {/snip/c} -radix dec {1 0ns}
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project C:/Users/edshe/Downloads/Finalvendingcode/vending_machine_final_new/vending_machine_final_new.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Bits/Downloads/vending_machine_final_new/vending_machine_final_new' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/edshe/lab_2/lab_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+close [ open C:/Users/edshe/lab_2/lab_2.srcs/sources_1/new/mux_par.v w ]
+add_files C:/Users/edshe/lab_2/lab_2.srcs/sources_1/new/mux_par.v
+update_compile_order -fileset sources_1
+set_property top mux_par [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'counter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj counter_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xelab -wto 87c8e8c80d894ea9b47040c4cd8d4018 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_tb_behav xil_defaultlib.counter_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 87c8e8c80d894ea9b47040c4cd8d4018 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_tb_behav xil_defaultlib.counter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "counter_tb_behav -key {Behavioral:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source counter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 100 ns : File "C:/Users/edshe/lab_2/lab_2.srcs/sources_1/new/counter_tb.v" Line 36
+xsim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1023.383 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1023.383 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top mux_par [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mux_par' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mux_par_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/edshe/lab_2/lab_2.srcs/sources_1/new/mux_par.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_par
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xelab -wto 87c8e8c80d894ea9b47040c4cd8d4018 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux_par_behav xil_defaultlib.mux_par xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 87c8e8c80d894ea9b47040c4cd8d4018 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux_par_behav xil_defaultlib.mux_par xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux_par
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mux_par_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim/xsim.dir/mux_par_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan 21 18:24:08 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mux_par_behav -key {Behavioral:sim_1:Functional:mux_par} -tclbatch {mux_par.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source mux_par.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mux_par_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1023.383 ; gain = 0.000
+run all
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mux_par' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mux_par_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/edshe/lab_2/lab_2.srcs/sources_1/new/mux_par.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_par
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xelab -wto 87c8e8c80d894ea9b47040c4cd8d4018 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux_par_behav xil_defaultlib.mux_par xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 87c8e8c80d894ea9b47040c4cd8d4018 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux_par_behav xil_defaultlib.mux_par xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux_par
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mux_par_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mux_par_behav -key {Behavioral:sim_1:Functional:mux_par} -tclbatch {mux_par.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source mux_par.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1061.086 ; gain = 3.555
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mux_par_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1061.086 ; gain = 3.555
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mux_par' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mux_par_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/edshe/lab_2/lab_2.srcs/sources_1/new/mux_par.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_par
+ERROR: [VRFC 10-2951] 'i' is not a constant [C:/Users/edshe/lab_2/lab_2.srcs/sources_1/new/mux_par.v:28]
+ERROR: [VRFC 10-2865] module 'mux_par' ignored due to previous errors [C:/Users/edshe/lab_2/lab_2.srcs/sources_1/new/mux_par.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/edshe/lab_2/lab_2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_project
+create_project pract_1 C:/Users/edshe/pract_1 -part xc7vx485tffg1157-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+file mkdir C:/Users/edshe/pract_1/pract_1.srcs/sources_1/new
+close [ open C:/Users/edshe/pract_1/pract_1.srcs/sources_1/new/decoder.v w ]
+add_files C:/Users/edshe/pract_1/pract_1.srcs/sources_1/new/decoder.v
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/edshe/pract_1/pract_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/edshe/pract_1/pract_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/edshe/pract_1/pract_1.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+ERROR: [VRFC 10-2951] 'i' is not a constant [C:/Users/edshe/pract_1/pract_1.srcs/sources_1/new/decoder.v:28]
+ERROR: [VRFC 10-2865] module 'decoder' ignored due to previous errors [C:/Users/edshe/pract_1/pract_1.srcs/sources_1/new/decoder.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/edshe/pract_1/pract_1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/edshe/pract_1/pract_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+open_project C:/Users/edshe/lab_2_2/lab_2_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+close_project
+open_project C:/Users/edshe/lab_3/lab_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 21 21:27:35 2024...
